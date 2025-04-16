@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Akaya+Telivigala&family=Allura&family=Arimo:ital,wght@0,400..700;1,400..700&family=Asset&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marck+Script&family=Modern+Antiqua&family=Noto+Sans+Georgian:wght@100..900&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=PT+Sans+Narrow:wght@400;700&family=Pinyon+Script&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <title>Sony's Newspaper</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: rgb(243, 234, 223);
+    }
+    section {
+        padding: 10px;
+        background-image:url('background.jpg');
+        margin-top: 10px;
+         margin-left: 150px;
+         box-shadow: 4px 4px 20px gray;
+         margin-bottom: 10px;
+          padding-right: 28px;
+          padding-bottom: 10px;
+    }
+    #issue {
+        font-family: "Noto Sans Georgian", sans-serif;
+        color: rgb(62, 37, 30);
+        display: inline-block;
+        font-size: 12px;
+        width: 30%;
+        margin-left: 10px;
+    }
+    #webs {
+        color: rgb(62, 37, 30);
+        display: inline-block;
+        font-family: "Noto Sans Georgian", sans-serif;
+        font-size: 12px;
+        width: 25%;
+    }
+    #date {
+        color: rgb(62, 37, 30);
+        display: inline-block;
+        font-family: "Noto Sans Georgian", sans-serif;
+        font-size: 12px;
+        width: 34%;
+    }
+    .headings {
+        width: 100%;
+        padding-top: 20px;
+    }
+    hr {
+        height: 1px;
+        border-width: 0.04em;
+           border-color: rgb(62, 37, 30);
+        margin-bottom: 2px;
+        margin-left: 10px;
+        margin-right: 13px;
+    }
+    #head {
+       color: rgb(62, 37, 30);
+       margin-left: 6px;
+       font-family: "Asset", serif;
+       width: 100%;
+       font-size: 14px;
+    }
+    section {
+        padding-left: 18px;
+        width: 60%;
+    }
+    #image1 {
+        width: 94%;
+        height: 6em;
+        margin-left: 14px;
+    }
+    #head2 {
+        font-family: "Noto Serif Display", serif;
+        margin-left: 18px;
+        font-weight: 600;
+        color: rgb(62, 37, 30);
+        font-size: 20px;
+    }
+    #content1 {
+        width: 90%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 9px;
+        margin-left: 15px;
+        display: inline-block;
+        color: rgb(62, 37, 30);
+    }
+    #image2 {
+        width:70%;
+        padding-right: 13px;
+        margin-left: 20px;
+    }
+#head3 {
+    font-family: "Noto Serif Display", serif;
+        margin-left: 18px;
+        font-weight: 600;
+        color: rgb(62, 37, 30);
+        font-size: 20px;
+}
+#image3 {
+    width: 90%;
+}
+#image4 {
+    width: 90%;
+}
+#content2 {
+    width: 15%;
+    font-size: 10px;
+    color: rgb(62, 37, 30);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#content3 {
+    width: 15%;
+    font-size: 10px;
+    color: rgb(62, 37, 30);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+table {
+    width: 60%;
+    border-right: 1px solid rgb(62, 37, 30);
+    padding-right: 5px;
+}
+.container {
+    column-count: 2;
+    margin-bottom: 15px;
+}
+#image5 {
+    width: 60%;
+}
+.first {
+    width: 170%;
+}
+#content4 {
+    font-size: 10px;
+    color: rgb(62, 37, 30);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container2 {
+    column-count: 2;
+}
+.f1 {
+    display: inline-block;
+}
+#content {
+       margin-left: 13px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 9px;
+         color: rgb(62, 37, 30);
+}
+footer {
+    text-align: center;
+    font-size: 60%; 
+    margin-top: 25px;
+    color: rgb(62, 37, 30);
+}
+@media screen and (max-width: 380px) {
+    section {
+        overflow-x: hidden;
+        padding-left: 3px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+        width: 100%;
+        margin: 0px 0px;
+    }
+    footer {
+        margin-top: 130px;
+    }
+    #head2 {
+        font-size: 18px;
+    }
+    #image2 {
+        width: 90%;
+    }
+    #webs, #issue, #date {
+        font-size: 10px;
+    }
+    #head {
+        font-size: 11px;
+    }
+}
+/* @media  screen and (width: 360px) {
+.container {
+    column-count: 1;
+}
+#image5 {
+    width: 69%;
+}
+#content4 {
+    width: 70%;
+    padding-top: 10px;
+}
+.first {
+    border-right: none;
+}
+.second {
+    column-count: 2;
+}
+footer {
+    text-align: center;
+} */
+/* }
+@media screen and (max-width: 430px)  {
+    section {
+        width: 100%;
+        margin-left: 50px;
+    }
+    .container2 {
+        column-count: 2;
+    }
+    #content1 {
+        width: 100%;
+    }
+    #image2 {
+        width: 92%;
+    }
+    .headings {
+        display: flex;
+        width: 110%;
+    }
+    #head {
+        font-size: 10.5px;
+    }
+    #webs {
+        font-size: 10px;
+    } */
+    /* #head2 {
+        font-size: 15px;
+    }
+    .headings{
+        display: flex;
+        font-size: 8px;
+    }
+    footer {
+    text-align: center;
+}
+}
+@media screen and (min-width: 435px) {
+    #head {
+        font-size: 12px;
+    }
+    footer {
+    text-align: center;
+}
+} */
+/* @media screen and (min-width: 500px) {
+    #head {
+        font-size: 12px;
+        margin-left: 18px;
+    }
+    .container2 {
+        column-count: 2;
+    }
+    #content1 {
+        width: 100%;
+    }
+    #image2 {
+        width: 95%;
+    }
+    .headings {
+        display: flex;
+        width: 110%;
+    }
+    footer {
+      text-align: center;
+}
+}
+
+@media screen and (width: 700px) {
+    .container {
+        column-count: 1;
+    }
+    .second {
+        column-count: 2;
+    }
+    footer {
+    text-align: center;
+}
+}
+@media screen and (min-width: 70px) {
+    #head {
+        font-size: 9px;
+    }
+    #issue {
+        font-size: 10px;
+    }
+    #webs {
+        font-size: 9.4px;
+        margin-left: -13px;
+    }
+    #date {
+        font-size: 10px;
+        margin-left: 10px;
+    }
+    #image3 {
+        width: 98%;
+    }
+    #content2{
+        font-size: 7px;
+    }
+    #content3 {
+        font-size: 7px;
+    }
+    #image4 {
+        width: 90%;
+    }
+    #content4 {
+        font-size: 8px;
+    }
+}
+@media screen and (width: 540px) {
+    #head {
+        font-size: 8px;
+        margin-left: 12px;
+    }
+    #image3 {
+        width: 98%;
+    }
+    #content2{
+        font-size: 7px;
+    }
+    #content3 {
+        font-size: 7px;
+    }
+    #image4 {
+        width: 90%;
+    }
+    #content4 {
+        font-size: 8px;
+    }
+}
+@media screen and (min-width: 900px) {
+    #head {
+        margin-left: 36px;
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 1020px) {
+    #image2 {
+        width: 55%;
+    }
+    #content3, #content2, #content4, #content1 {
+        font-size: 12px;
+    }
+    footer {
+        text-align: center;
+    }
+} */
+</style>
+<body>
+    <section>
+        <div class="headings">
+        <p id="issue">Issue No.25</p>
+        <p id="webs">Website Exclusive</p>
+        <p id="date">November 12, 2021</p></div>
+        <hr id="line1"><hr id="line2">
+    <h3 id="head">ON THE BLOG UPDATE NEWS</h3>
+    <hr id="line3"><img src="image1.png" id="image1"><hr id="line4">
+    <p id="head2">LIFESTYLE | FASHION | STREETWEAR</p> <div class="container2"><div class="f1">
+    <p id="content1">Streetwear is more than just fashion—it’s a movement, a culture, and a <b></b> From the bustling streets of New York to the stylish avenues of Tokyo, streetwear has cemented itself as a dominant force in modern fashion. It’s a lifestyle that blends comfort with creativity, offering a unique mix of casual, edgy, and trend-setting pieces that define an entire </p></div><div class="f2"><p id="content">What do you think try on and get to experience new fashion trending and other things you wanna try on don't resist this is your chance catch it before flying away.  it’s a movement, a culture</p>
+    <img src="image2.png" id="image2" alt=""></div></div>
+    <hr>
+    <p id="head3">MEET KAMILLE & DEAN</p>
+    <div class="container">
+        <div class="first">
+            <table  cellspacing="0">
+                <tr>
+                   <td><img src="image4.png" id="image3" alt=""></td>
+                   <td id="content2">The trendsetter of our streetwear collection ur collection <br><br>Join the newsletter for an exclusive interview with them!
+                </td>
+                </tr>
+                <tr>
+                           <td id="content3">Add a personal touch by customazing this layout as much as you want.  Add social media links for engagement</td>
+                           <td><img src="image5.png" id="image4" alt=""></td>
+                        </tr>
+            </table>
+        </div>
+        <div class="second">
+             <img src="image3.png" id="image5" alt="">
+             <p id="content4">Personalize this by customazing this layout. You can also add other related visuals to capture the attentiation of the readers. Add social media links for engagement.</p>
+        </div>
+    </div>
+    <footer>@copyright | everywhere new Times.rw.info.com</footer>
+</section>
+</body>
+</html>
